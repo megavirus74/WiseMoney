@@ -30,7 +30,14 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        var selectedCell = tableView.cellForRowAtIndexPath(indexPath) as! CategoryViewCell
+        
+//        let subview = NSBundle.mainBundle().loadNibNamed("PopUpViewController",
+//            owner:self, options:nil)![0]
+//        view.addSubview(subview)
+        
+        
+//        [rootView addSubview:containerView];
+//        [self.view addSubview:rootView];
         
     }
     

@@ -26,6 +26,19 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="496" id="5YH-W5-eix"/>
                                         </constraints>
+                                        <view key="tableFooterView" contentMode="scaleToFill" id="h9c-dl-c1Z">
+                                            <rect key="frame" x="0.0" y="86" width="320" height="199"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-tk-sqx">
+                                                    <rect key="frame" x="8" y="8" width="46" height="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="balanceCategory" id="Lkn-fQ-kUq" customClass="CategoryViewCell" customModule="Wise_Money" customModuleProvider="target">
                                                 <autoresizingMask key="autoresizingMask"/>
@@ -114,6 +127,7 @@
                     <connections>
                         <outlet property="menuButton" destination="UdJ-3U-LE7" id="QLI-zz-yu2"/>
                         <outlet property="tableView" destination="Ft3-FC-3M9" id="4yW-Du-6cf"/>
+                        <outlet property="view" destination="eci-Kf-usi" id="9sL-N2-gCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ng-d6-1QX" userLabel="First Responder" sceneMemberID="firstResponder"/>
