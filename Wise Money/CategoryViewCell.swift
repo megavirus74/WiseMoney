@@ -35,7 +35,7 @@ class CategoryViewCell: UITableViewCell {
     
     func changeToPressedState() {
         var r, g, b, a: CGFloat
-        self.frontView.backgroundColor!.getRed(r, green: g, blue: b, alpha: a)
+        //self.frontView.backgroundColor!.getRed(r, green: g, blue: b, alpha: a)
         
     }
 }
