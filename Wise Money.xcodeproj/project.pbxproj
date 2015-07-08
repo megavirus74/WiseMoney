@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2ED73C555EC05AC4528D312 /* libPods-Wise Money.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E3CD7B377AD7F3E48A65B6 /* libPods-Wise Money.a */; };
 		D8848E1C1B3AFCE800E3A3AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */; };
-		D8848E1E1B3AFCE800E3A3AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E1D1B3AFCE800E3A3AC /* ViewController.swift */; };
 		D8848E211B3AFCE800E3A3AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8848E1F1B3AFCE800E3A3AC /* Main.storyboard */; };
 		D8848E231B3AFCE800E3A3AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8848E221B3AFCE800E3A3AC /* Images.xcassets */; };
 		D8848E261B3AFCE800E3A3AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8848E241B3AFCE800E3A3AC /* LaunchScreen.xib */; };
 		D8848E321B3AFCE900E3A3AC /* Wise_MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E311B3AFCE900E3A3AC /* Wise_MoneyTests.swift */; };
+		D8848E411B3B00DF00E3A3AC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8848E401B3B00DF00E3A3AC /* SWRevealViewController.m */; };
+		D8848E471B3B07AB00E3A3AC /* BalanceBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E461B3B07AB00E3A3AC /* BalanceBrain.swift */; };
+		D8848E4B1B3B19E200E3A3AC /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */; };
+		D8848E4F1B3B230800E3A3AC /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E4E1B3B230700E3A3AC /* CategoryViewCell.swift */; };
+		D8848E521B3B24A800E3A3AC /* moneyData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8848E501B3B24A800E3A3AC /* moneyData.xcdatamodeld */; };
+		D8848E581B3B2DA300E3A3AC /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8848E571B3B2DA300E3A3AC /* PopUpViewController.xib */; };
+		D8848E5A1B3B2E9400E3A3AC /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */; };
+		D8A579FA1B44479900D8C9EE /* BalanceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579F91B44479900D8C9EE /* BalanceCategory.swift */; };
+		D8A579FC1B44479900D8C9EE /* BalanceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579FB1B44479900D8C9EE /* BalanceOperation.swift */; };
+		D8A579FE1B4447B300D8C9EE /* BalanceCategoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +36,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7BB1AEF9726F26C106752ECB /* Pods-Wise Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wise Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wise Money/Pods-Wise Money.release.xcconfig"; sourceTree = "<group>"; };
+		9A311614C60DB8BE2BFE0EB4 /* Pods-Wise Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wise Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wise Money/Pods-Wise Money.debug.xcconfig"; sourceTree = "<group>"; };
+		A0E3CD7B377AD7F3E48A65B6 /* libPods-Wise Money.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wise Money.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8848E161B3AFCE800E3A3AC /* Wise Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wise Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8848E1A1B3AFCE800E3A3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8848E1D1B3AFCE800E3A3AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8848E201B3AFCE800E3A3AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8848E221B3AFCE800E3A3AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8848E251B3AFCE800E3A3AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D8848E2B1B3AFCE900E3A3AC /* Wise MoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wise MoneyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8848E301B3AFCE900E3A3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8848E311B3AFCE900E3A3AC /* Wise_MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wise_MoneyTests.swift; sourceTree = "<group>"; };
+		D8848E3B1B3AFD1800E3A3AC /* Wise Money-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wise Money-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8848E3F1B3B00DF00E3A3AC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		D8848E401B3B00DF00E3A3AC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D8848E461B3B07AB00E3A3AC /* BalanceBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceBrain.swift; sourceTree = "<group>"; };
+		D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		D8848E4E1B3B230700E3A3AC /* CategoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		D8848E511B3B24A800E3A3AC /* moneyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = moneyData.xcdatamodel; sourceTree = "<group>"; };
+		D8848E571B3B2DA300E3A3AC /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
+		D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		D8A579F91B44479900D8C9EE /* BalanceCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCategory.swift; sourceTree = "<group>"; };
+		D8A579FB1B44479900D8C9EE /* BalanceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceOperation.swift; sourceTree = "<group>"; };
+		D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCategoryExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2ED73C555EC05AC4528D312 /* libPods-Wise Money.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +87,8 @@
 				D8848E181B3AFCE800E3A3AC /* Wise Money */,
 				D8848E2E1B3AFCE900E3A3AC /* Wise MoneyTests */,
 				D8848E171B3AFCE800E3A3AC /* Products */,
+				DF425D7F0A15D47C36FEB48D /* Pods */,
+				F9DF9D4F5FBAF9085A50B240 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +104,12 @@
 		D8848E181B3AFCE800E3A3AC /* Wise Money */ = {
 			isa = PBXGroup;
 			children = (
-				D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */,
-				D8848E1D1B3AFCE800E3A3AC /* ViewController.swift */,
+				D8848E501B3B24A800E3A3AC /* moneyData.xcdatamodeld */,
 				D8848E1F1B3AFCE800E3A3AC /* Main.storyboard */,
-				D8848E221B3AFCE800E3A3AC /* Images.xcassets */,
-				D8848E241B3AFCE800E3A3AC /* LaunchScreen.xib */,
+				D8848E4C1B3B20FD00E3A3AC /* Classes */,
+				D8848E4D1B3B210400E3A3AC /* ViewControllers */,
 				D8848E191B3AFCE800E3A3AC /* Supporting Files */,
+				D8848E3B1B3AFD1800E3A3AC /* Wise Money-Bridging-Header.h */,
 			);
 			path = "Wise Money";
 			sourceTree = "<group>";
@@ -90,6 +117,9 @@
 		D8848E191B3AFCE800E3A3AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8848E241B3AFCE800E3A3AC /* LaunchScreen.xib */,
+				D8848E221B3AFCE800E3A3AC /* Images.xcassets */,
+				D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */,
 				D8848E1A1B3AFCE800E3A3AC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +142,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D8848E4C1B3B20FD00E3A3AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D8A579FB1B44479900D8C9EE /* BalanceOperation.swift */,
+				D8A579F91B44479900D8C9EE /* BalanceCategory.swift */,
+				D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */,
+				D8848E4E1B3B230700E3A3AC /* CategoryViewCell.swift */,
+				D8848E461B3B07AB00E3A3AC /* BalanceBrain.swift */,
+				D8848E3F1B3B00DF00E3A3AC /* SWRevealViewController.h */,
+				D8848E401B3B00DF00E3A3AC /* SWRevealViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D8848E4D1B3B210400E3A3AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8848E571B3B2DA300E3A3AC /* PopUpViewController.xib */,
+				D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */,
+				D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DF425D7F0A15D47C36FEB48D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A311614C60DB8BE2BFE0EB4 /* Pods-Wise Money.debug.xcconfig */,
+				7BB1AEF9726F26C106752ECB /* Pods-Wise Money.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9DF9D4F5FBAF9085A50B240 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0E3CD7B377AD7F3E48A65B6 /* libPods-Wise Money.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8848E351B3AFCE900E3A3AC /* Build configuration list for PBXNativeTarget "Wise Money" */;
 			buildPhases = (
+				7C11556FEB12E10F7D208CD2 /* Check Pods Manifest.lock */,
 				D8848E121B3AFCE800E3A3AC /* Sources */,
 				D8848E131B3AFCE800E3A3AC /* Frameworks */,
 				D8848E141B3AFCE800E3A3AC /* Resources */,
+				D258259A1804E4394FD5ACCC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +268,7 @@
 				D8848E211B3AFCE800E3A3AC /* Main.storyboard in Resources */,
 				D8848E261B3AFCE800E3A3AC /* LaunchScreen.xib in Resources */,
 				D8848E231B3AFCE800E3A3AC /* Images.xcassets in Resources */,
+				D8848E581B3B2DA300E3A3AC /* PopUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +281,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C11556FEB12E10F7D208CD2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D258259A1804E4394FD5ACCC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wise Money/Pods-Wise Money-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8848E121B3AFCE800E3A3AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8848E1E1B3AFCE800E3A3AC /* ViewController.swift in Sources */,
+				D8848E521B3B24A800E3A3AC /* moneyData.xcdatamodeld in Sources */,
 				D8848E1C1B3AFCE800E3A3AC /* AppDelegate.swift in Sources */,
+				D8848E4B1B3B19E200E3A3AC /* CategoriesViewController.swift in Sources */,
+				D8A579FA1B44479900D8C9EE /* BalanceCategory.swift in Sources */,
+				D8848E411B3B00DF00E3A3AC /* SWRevealViewController.m in Sources */,
+				D8A579FE1B4447B300D8C9EE /* BalanceCategoryExtension.swift in Sources */,
+				D8848E471B3B07AB00E3A3AC /* BalanceBrain.swift in Sources */,
+				D8A579FC1B44479900D8C9EE /* BalanceOperation.swift in Sources */,
+				D8848E5A1B3B2E9400E3A3AC /* PopUpViewController.swift in Sources */,
+				D8848E4F1B3B230800E3A3AC /* CategoryViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,21 +455,28 @@
 		};
 		D8848E361B3AFCE900E3A3AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A311614C60DB8BE2BFE0EB4 /* Pods-Wise Money.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Wise Money/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wise Money/Wise Money-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D8848E371B3AFCE900E3A3AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB1AEF9726F26C106752ECB /* Pods-Wise Money.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Wise Money/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wise Money/Wise Money-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +533,7 @@
 				D8848E371B3AFCE900E3A3AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8848E381B3AFCE900E3A3AC /* Build configuration list for PBXNativeTarget "Wise MoneyTests" */ = {
 			isa = XCConfigurationList;
@@ -419,8 +542,22 @@
 				D8848E3A1B3AFCE900E3A3AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8848E501B3B24A800E3A3AC /* moneyData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8848E511B3B24A800E3A3AC /* moneyData.xcdatamodel */,
+			);
+			currentVersion = D8848E511B3B24A800E3A3AC /* moneyData.xcdatamodel */;
+			path = moneyData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D8848E0E1B3AFCE700E3A3AC /* Project object */;
 }

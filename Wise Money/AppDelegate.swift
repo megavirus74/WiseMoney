@@ -13,8 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        MagicalRecord.setupCoreDataStackWithAutoMigratingSqliteStoreNamed("moneyData")
+        // Setup CoreData with MagicalRecord
+        // Step 1. Setup Core Data Stack with Magical Record
+        // Step 2. Relax. Why not have a beer? Surely all this talk of beer is making you thirsty…
         // Override point for customization after application launch.
         return true
     }

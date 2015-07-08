@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BalanceCategory" representedClassName="BalanceCategory" syncable="YES">
+        <attribute name="categoryDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryPercent" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="balanceOperations" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="BalanceOperation" inverseName="balanceCategory" inverseEntity="BalanceOperation" syncable="YES"/>
+    </entity>
+    <entity name="BalanceOperation" representedClassName="BalanceOperation" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="moneyValue" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="balanceCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceCategory" inverseName="balanceOperations" inverseEntity="BalanceCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BalanceCategory" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="BalanceOperation" positionX="225" positionY="147" width="128" height="105"/>
+    </elements>
+</model>
