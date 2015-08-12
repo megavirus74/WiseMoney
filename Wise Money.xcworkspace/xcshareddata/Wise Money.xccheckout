@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3B52EC44-3835-44CF-8D83-D8500866740D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Wise Money</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1482CF78C01BF6F85C1B7F7B6E5DDB5707F10226</key>
+		<string>https://github.com/megavirus74/WiseMoney</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Wise Money.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1482CF78C01BF6F85C1B7F7B6E5DDB5707F10226</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/megavirus74/WiseMoney</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1482CF78C01BF6F85C1B7F7B6E5DDB5707F10226</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1482CF78C01BF6F85C1B7F7B6E5DDB5707F10226</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Wise-Money</string>
+		</dict>
+	</array>
+</dict>
+</plist>
