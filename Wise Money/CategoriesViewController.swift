@@ -9,7 +9,6 @@
 import UIKit
 
 class CategoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var popViewController: PopUpViewController!
 
     var colorSet1 = [UIColor(red: 236/255, green: 208/255, blue: 102/255, alpha: 1), UIColor(red: 217/255, green: 91/255, blue: 67/255, alpha: 1)]
     
@@ -30,10 +29,15 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        NSLog("SHOW MINUS")
-        let subview = NSBundle.mainBundle().loadNibNamed("PopUpViewController", owner:self, options:nil)![0]
-        view.addSubview(subview as! UIView)
+        let layout = KLCPopupLayoutMake(KLCPopupHorizontalLayout.Center, KLCPopupVerticalLayout.Center)
+        var popUpView = UIView()
         
+        //popUpView.translatesAutoresizingMaskIntoConstraints = false
+        popUpView.backgroundColor = UIColor.greenColor()
+        popUpView.layer.cornerRadius = 12.0
+        
+        let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
+        popup.showWithLayout(layout)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

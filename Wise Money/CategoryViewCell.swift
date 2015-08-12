@@ -25,14 +25,6 @@ class CategoryViewCell: UITableViewCell {
     @IBOutlet weak var moneyAmount: UILabel!
     @IBOutlet weak var title: UILabel!
     
-    @IBAction func subtract(sender: UIButton) {
-        var parent = self.superview as! UITableView
-        PopUpViewController.categoryID = parent.indexPathForCell(self)!.row
-        self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
-        self.popViewController.title = "This is a popup view"
-        self.popViewController.showInView(self.superview?.superview?.superview?.superview, animated: true)
-    }
-    
     func changeToPressedState() {
         
     }

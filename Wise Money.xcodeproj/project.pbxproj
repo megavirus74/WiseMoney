@@ -19,7 +19,6 @@
 		D8848E4B1B3B19E200E3A3AC /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */; };
 		D8848E4F1B3B230800E3A3AC /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E4E1B3B230700E3A3AC /* CategoryViewCell.swift */; };
 		D8848E521B3B24A800E3A3AC /* moneyData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8848E501B3B24A800E3A3AC /* moneyData.xcdatamodeld */; };
-		D8848E581B3B2DA300E3A3AC /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8848E571B3B2DA300E3A3AC /* PopUpViewController.xib */; };
 		D8848E5A1B3B2E9400E3A3AC /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */; };
 		D8A579FA1B44479900D8C9EE /* BalanceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579F91B44479900D8C9EE /* BalanceCategory.swift */; };
 		D8A579FC1B44479900D8C9EE /* BalanceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579FB1B44479900D8C9EE /* BalanceOperation.swift */; };
@@ -58,7 +57,6 @@
 		D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		D8848E4E1B3B230700E3A3AC /* CategoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		D8848E511B3B24A800E3A3AC /* moneyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = moneyData.xcdatamodel; sourceTree = "<group>"; };
-		D8848E571B3B2DA300E3A3AC /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		D8A579F91B44479900D8C9EE /* BalanceCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCategory.swift; sourceTree = "<group>"; };
 		D8A579FB1B44479900D8C9EE /* BalanceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceOperation.swift; sourceTree = "<group>"; };
@@ -87,6 +85,8 @@
 		D80CB9861B7B95C8002C5EE1 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D8848E3F1B3B00DF00E3A3AC /* SWRevealViewController.h */,
+				D8848E401B3B00DF00E3A3AC /* SWRevealViewController.m */,
 				D80CB9871B7B95D1002C5EE1 /* KLCPopup.h */,
 				D80CB9881B7B95D1002C5EE1 /* KLCPopup.m */,
 			);
@@ -163,8 +163,6 @@
 				D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */,
 				D8848E4E1B3B230700E3A3AC /* CategoryViewCell.swift */,
 				D8848E461B3B07AB00E3A3AC /* BalanceBrain.swift */,
-				D8848E3F1B3B00DF00E3A3AC /* SWRevealViewController.h */,
-				D8848E401B3B00DF00E3A3AC /* SWRevealViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -172,7 +170,6 @@
 		D8848E4D1B3B210400E3A3AC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D8848E571B3B2DA300E3A3AC /* PopUpViewController.xib */,
 				D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */,
 				D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */,
 			);
@@ -281,7 +278,6 @@
 				D8848E211B3AFCE800E3A3AC /* Main.storyboard in Resources */,
 				D8848E261B3AFCE800E3A3AC /* LaunchScreen.xib in Resources */,
 				D8848E231B3AFCE800E3A3AC /* Images.xcassets in Resources */,
-				D8848E581B3B2DA300E3A3AC /* PopUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

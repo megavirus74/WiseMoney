@@ -4,4 +4,5 @@
 
 #define MR_SHORTHAND
 #import "SWRevealViewController.h"
+#import "KLCPopup.h"
 #import <MagicalRecord/MagicalRecord.h>
