@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C2ED73C555EC05AC4528D312 /* libPods-Wise Money.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E3CD7B377AD7F3E48A65B6 /* libPods-Wise Money.a */; };
+		D80CB9891B7B95D1002C5EE1 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = D80CB9881B7B95D1002C5EE1 /* KLCPopup.m */; };
 		D8848E1C1B3AFCE800E3A3AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */; };
 		D8848E211B3AFCE800E3A3AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8848E1F1B3AFCE800E3A3AC /* Main.storyboard */; };
 		D8848E231B3AFCE800E3A3AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8848E221B3AFCE800E3A3AC /* Images.xcassets */; };
@@ -39,6 +40,8 @@
 		7BB1AEF9726F26C106752ECB /* Pods-Wise Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wise Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wise Money/Pods-Wise Money.release.xcconfig"; sourceTree = "<group>"; };
 		9A311614C60DB8BE2BFE0EB4 /* Pods-Wise Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wise Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wise Money/Pods-Wise Money.debug.xcconfig"; sourceTree = "<group>"; };
 		A0E3CD7B377AD7F3E48A65B6 /* libPods-Wise Money.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wise Money.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80CB9871B7B95D1002C5EE1 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KLCPopup.h; path = "../../../Downloads/KLCPopup-master/KLCPopup/KLCPopup.h"; sourceTree = "<group>"; };
+		D80CB9881B7B95D1002C5EE1 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KLCPopup.m; path = "../../../Downloads/KLCPopup-master/KLCPopup/KLCPopup.m"; sourceTree = "<group>"; };
 		D8848E161B3AFCE800E3A3AC /* Wise Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wise Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8848E1A1B3AFCE800E3A3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D80CB9861B7B95C8002C5EE1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D80CB9871B7B95D1002C5EE1 /* KLCPopup.h */,
+				D80CB9881B7B95D1002C5EE1 /* KLCPopup.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		D8848E0D1B3AFCE700E3A3AC = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		D8848E181B3AFCE800E3A3AC /* Wise Money */ = {
 			isa = PBXGroup;
 			children = (
+				D80CB9861B7B95C8002C5EE1 /* Libraries */,
 				D8848E501B3B24A800E3A3AC /* moneyData.xcdatamodeld */,
 				D8848E1F1B3AFCE800E3A3AC /* Main.storyboard */,
 				D8848E4C1B3B20FD00E3A3AC /* Classes */,
@@ -327,6 +340,7 @@
 				D8A579FE1B4447B300D8C9EE /* BalanceCategoryExtension.swift in Sources */,
 				D8848E471B3B07AB00E3A3AC /* BalanceBrain.swift in Sources */,
 				D8A579FC1B44479900D8C9EE /* BalanceOperation.swift in Sources */,
+				D80CB9891B7B95D1002C5EE1 /* KLCPopup.m in Sources */,
 				D8848E5A1B3B2E9400E3A3AC /* PopUpViewController.swift in Sources */,
 				D8848E4F1B3B230800E3A3AC /* CategoryViewCell.swift in Sources */,
 			);

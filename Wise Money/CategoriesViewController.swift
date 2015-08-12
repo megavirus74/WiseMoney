@@ -20,7 +20,7 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         self.tableView.reloadData()
     }
 
-    @IBAction func addMoney(sender: UIBarButtonItem) {
+    @IBAction func addMoney(sender: UIButton) {
         
     }
     
@@ -29,15 +29,10 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        
-//        let subview = NSBundle.mainBundle().loadNibNamed("PopUpViewController",
-//            owner:self, options:nil)![0]
-//        view.addSubview(subview)
-        
-        
-//        [rootView addSubview:containerView];
-//        [self.view addSubview:rootView];
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        NSLog("SHOW MINUS")
+        let subview = NSBundle.mainBundle().loadNibNamed("PopUpViewController", owner:self, options:nil)![0]
+        view.addSubview(subview as! UIView)
         
     }
     

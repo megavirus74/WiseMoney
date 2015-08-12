@@ -20,7 +20,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-nW-3lp">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-FC-3M9">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-FC-3M9">
                                         <rect key="frame" x="0.0" y="8" width="320" height="496"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -31,10 +31,13 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-tk-sqx">
-                                                    <rect key="frame" x="8" y="8" width="46" height="30"/>
-                                                    <state key="normal" title="Button">
+                                                    <rect key="frame" x="8" y="8" width="79" height="30"/>
+                                                    <state key="normal" title="Add money">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="addMoney:" destination="tki-MQ-RO4" eventType="touchUpInside" id="E45-r8-d7M"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,16 +119,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="PbG-nW-3lp" secondAttribute="trailing" constant="-16" id="zUJ-Mz-zrH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8wp-nW-aAA">
-                        <barButtonItem key="leftBarButtonItem" title="≡" id="UdJ-3U-LE7"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VDE-Y6-1fn">
-                            <connections>
-                                <action selector="addMoney:" destination="tki-MQ-RO4" id="P61-4p-E3t"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="8wp-nW-aAA"/>
                     <connections>
-                        <outlet property="menuButton" destination="UdJ-3U-LE7" id="QLI-zz-yu2"/>
                         <outlet property="tableView" destination="Ft3-FC-3M9" id="4yW-Du-6cf"/>
                         <outlet property="view" destination="eci-Kf-usi" id="9sL-N2-gCZ"/>
                     </connections>
