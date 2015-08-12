@@ -12,17 +12,16 @@ class PopUpViewController: UIView {
 
     @IBOutlet var popUpView: UIView!
     @IBOutlet weak var input: UITextField!
-    static var categoryID = Int()
-    
+    var categoryID = Int()
     
     
     @IBAction func subtract() {
         var operation = BalanceOperation.MR_createEntity()
         operation.date = NSDate()
         operation.moneyValue = (self.input.text as NSString).doubleValue
-        operation.balanceCategory = BalanceBrain.sharedInstance.balanceCategories[PopUpViewController.categoryID]
+        operation.balanceCategory = BalanceBrain.sharedInstance.balanceCategories[categoryID]
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
-    
+        
     }
 
     

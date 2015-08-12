@@ -12,11 +12,11 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
 
     var colorSet1 = [UIColor(red: 236/255, green: 208/255, blue: 102/255, alpha: 1), UIColor(red: 217/255, green: 91/255, blue: 67/255, alpha: 1)]
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
+        
     }
 
     @IBAction func addMoney(sender: UIButton) {
@@ -30,19 +30,26 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let layout = KLCPopupLayoutMake(KLCPopupHorizontalLayout.Center, KLCPopupVerticalLayout.Center)
-        var popUpView = UIView(frame: CGRectMake(0, 0, 300, 400))
-        popUpView.backgroundColor = UIColor.blackColor()
-        let dismissButton = UIButton.buttonWithType(UIButtonType.Custom)
-        popUpView.layer.cornerRadius = 12.0
-        
+        var popUpView = NSBundle.mainBundle().loadNibNamed("PopUpView", owner: self, options: nil).last as! PopUpViewController
+        popUpView.categoryID = indexPath.row
         let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
         popup.showWithLayout(layout)
+        tableView.reloadData()
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("balanceCategory", forIndexPath: indexPath) as! CategoryViewCell
         cell.title.text = BalanceBrain.sharedInstance.balanceCategories[indexPath.row].title
         cell.moneyAmount.text = "\(BalanceBrain.sharedInstance.balanceCategories[indexPath.row].currentBalance.description)$"
+        
+        
+        cell.frontView.backgroundColor = colorSet1[indexPath.row % colorSet1.count]
+        
+        let newFrame = cell.frontView
+
+        
+        cell.frontView.frame = CGRectMake(0, 0, CGFloat(BalanceBrain.sharedInstance.balanceCategories[indexPath.row].percentLeft/100) * cell.backView.bounds.width, cell.backView.bounds.height)
+        println(CGFloat(BalanceBrain.sharedInstance.balanceCategories[indexPath.row].percentLeft/100) , cell.backView.bounds.width)
         return cell
     }
     

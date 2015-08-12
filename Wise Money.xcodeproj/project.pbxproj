@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C2ED73C555EC05AC4528D312 /* libPods-Wise Money.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E3CD7B377AD7F3E48A65B6 /* libPods-Wise Money.a */; };
 		D80CB98C1B7BA337002C5EE1 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = D80CB98B1B7BA337002C5EE1 /* KLCPopup.m */; };
+		D80CB98E1B7BA519002C5EE1 /* PopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80CB98D1B7BA519002C5EE1 /* PopUpView.xib */; };
 		D8848E1C1B3AFCE800E3A3AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */; };
 		D8848E211B3AFCE800E3A3AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8848E1F1B3AFCE800E3A3AC /* Main.storyboard */; };
 		D8848E231B3AFCE800E3A3AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8848E221B3AFCE800E3A3AC /* Images.xcassets */; };
@@ -41,6 +42,7 @@
 		A0E3CD7B377AD7F3E48A65B6 /* libPods-Wise Money.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wise Money.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80CB98A1B7BA337002C5EE1 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
 		D80CB98B1B7BA337002C5EE1 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		D80CB98D1B7BA519002C5EE1 /* PopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpView.xib; sourceTree = "<group>"; };
 		D8848E161B3AFCE800E3A3AC /* Wise Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wise Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8848E1A1B3AFCE800E3A3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8848E1B1B3AFCE800E3A3AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		D8848E4D1B3B210400E3A3AC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D80CB98D1B7BA519002C5EE1 /* PopUpView.xib */,
 				D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */,
 				D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */,
 			);
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8848E211B3AFCE800E3A3AC /* Main.storyboard in Resources */,
+				D80CB98E1B7BA519002C5EE1 /* PopUpView.xib in Resources */,
 				D8848E261B3AFCE800E3A3AC /* LaunchScreen.xib in Resources */,
 				D8848E231B3AFCE800E3A3AC /* Images.xcassets in Resources */,
 			);
