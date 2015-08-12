@@ -30,10 +30,9 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let layout = KLCPopupLayoutMake(KLCPopupHorizontalLayout.Center, KLCPopupVerticalLayout.Center)
-        var popUpView = UIView()
-        
-        //popUpView.translatesAutoresizingMaskIntoConstraints = false
-        popUpView.backgroundColor = UIColor.greenColor()
+        var popUpView = UIView(frame: CGRectMake(0, 0, 300, 400))
+        popUpView.backgroundColor = UIColor.blackColor()
+        let dismissButton = UIButton.buttonWithType(UIButtonType.Custom)
         popUpView.layer.cornerRadius = 12.0
         
         let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
