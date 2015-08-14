@@ -21,6 +21,8 @@ class PopUpViewController: UIView {
         operation.moneyValue = (self.input.text as NSString).doubleValue
         operation.balanceCategory = BalanceBrain.sharedInstance.balanceCategories[categoryID]
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        dismissPresentingPopup()
+
         
     }
 
