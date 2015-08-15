@@ -22,6 +22,11 @@ import UIKit
     }
 
     @IBAction func addMoney(sender: UIButton) {
+        let layout = KLCPopupLayoutMake(KLCPopupHorizontalLayout.Center, KLCPopupVerticalLayout.Center)
+        var popUpView = NSBundle.mainBundle().loadNibNamed("popUpAdd", owner: self, options: nil).last as! popUpAddViewController
+        let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
+        
+        popup.showWithLayout(layout)
         
         
     }

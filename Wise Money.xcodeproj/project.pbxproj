@@ -24,6 +24,8 @@
 		D8A579FA1B44479900D8C9EE /* BalanceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579F91B44479900D8C9EE /* BalanceCategory.swift */; };
 		D8A579FC1B44479900D8C9EE /* BalanceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579FB1B44479900D8C9EE /* BalanceOperation.swift */; };
 		D8A579FE1B4447B300D8C9EE /* BalanceCategoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */; };
+		EE533C051B7F239500F5A05A /* popUpAdd.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE533C041B7F239500F5A05A /* popUpAdd.xib */; };
+		EE533C0A1B7F23DD00F5A05A /* popUpAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		D8A579F91B44479900D8C9EE /* BalanceCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCategory.swift; sourceTree = "<group>"; };
 		D8A579FB1B44479900D8C9EE /* BalanceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceOperation.swift; sourceTree = "<group>"; };
 		D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCategoryExtension.swift; sourceTree = "<group>"; };
+		EE533C041B7F239500F5A05A /* popUpAdd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popUpAdd.xib; sourceTree = "<group>"; };
+		EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpAddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				D80CB98D1B7BA519002C5EE1 /* PopUpView.xib */,
+				EE533C041B7F239500F5A05A /* popUpAdd.xib */,
+				EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */,
 				D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */,
 				D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */,
 			);
@@ -281,6 +287,7 @@
 				D8848E211B3AFCE800E3A3AC /* Main.storyboard in Resources */,
 				D80CB98E1B7BA519002C5EE1 /* PopUpView.xib in Resources */,
 				D8848E261B3AFCE800E3A3AC /* LaunchScreen.xib in Resources */,
+				EE533C051B7F239500F5A05A /* popUpAdd.xib in Resources */,
 				D8848E231B3AFCE800E3A3AC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +350,7 @@
 				D8A579FC1B44479900D8C9EE /* BalanceOperation.swift in Sources */,
 				D8848E5A1B3B2E9400E3A3AC /* PopUpViewController.swift in Sources */,
 				D8848E4F1B3B230800E3A3AC /* CategoryViewCell.swift in Sources */,
+				EE533C0A1B7F23DD00F5A05A /* popUpAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
