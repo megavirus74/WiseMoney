@@ -36,7 +36,7 @@ class BalanceBrain {
             addCategory("Savings", categoryDescription: "ALALA", categoryPercent: 0.05)
             addCategory("Gifts", categoryDescription: "Your reservation", categoryPercent: 0.3)
         }
-        addMoney(1000)
+        addMoney(100)
         if let total = NSUserDefaults.standardUserDefaults().objectForKey("totalBalance") as? Double
         {
             totalBalance = NSUserDefaults.standardUserDefaults().objectForKey("totalBalance") as! Double

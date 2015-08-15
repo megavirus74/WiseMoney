@@ -18,8 +18,17 @@ import UIKit
         super.viewDidLoad()
         self.reload()
         
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: "reload",
+            name: "NeedReload",
+            object: nil)
+        
+        
         
     }
+    
+    
 
     @IBAction func addMoney(sender: UIButton) {
         let layout = KLCPopupLayoutMake(KLCPopupHorizontalLayout.Center, KLCPopupVerticalLayout.Center)

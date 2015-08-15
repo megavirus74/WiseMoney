@@ -11,7 +11,7 @@ extension BalanceCategory {
     
     var totalBalance: Double {
         get {
-            return BalanceBrain.sharedInstance.totalBalance * categoryPercent.doubleValue / 100
+            return BalanceBrain.sharedInstance.totalBalance * categoryPercent.doubleValue
         }
     }
     
