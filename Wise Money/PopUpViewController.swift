@@ -22,8 +22,13 @@ class PopUpViewController: UIView {
         operation.balanceCategory = BalanceBrain.sharedInstance.balanceCategories[categoryID]
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         dismissPresentingPopup()
-        NSNotificationCenter.defaultCenter().postNotificationName("NeedReload", object: self)
+        NSNotificationCenter.defaultCenter().postNotificationName("NeedReload", object: nil)
 
+
+        
+       
+        
+       
         
     }
 

@@ -11,7 +11,8 @@ import UIKit
  class CategoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var colorSet1 = [UIColor(red: 236/255, green: 208/255, blue: 102/255, alpha: 1), UIColor(red: 217/255, green: 91/255, blue: 67/255, alpha: 1)]
-    
+
+    var ViewCellController : CategoryViewCell! = CategoryViewCell()
     
     @IBOutlet weak var tableView: UITableView!
     override  func viewDidLoad() {
@@ -24,6 +25,7 @@ import UIKit
             name: "NeedReload",
             object: nil)
         
+       
         
         
     }
@@ -44,6 +46,18 @@ import UIKit
         tableView.reloadData()
     }
     
+//    func Slider()
+//    {
+//        println("HOHOHOHO")
+//        let t = BalanceBrain.sharedInstance.balanceCategories.count
+//        
+//        for i in 1...t {
+//            Constraint.constant =  -(CGFloat(1 - BalanceBrain.sharedInstance.balanceCategories[i].percentLeft) * backView.bounds.width)
+//        }
+//    }
+
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return BalanceBrain.sharedInstance.balanceCategories.count
@@ -61,7 +75,7 @@ import UIKit
         tableView.reloadData()
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("balanceCategory", forIndexPath: indexPath) as! CategoryViewCell
         cell.title.text = BalanceBrain.sharedInstance.balanceCategories[indexPath.row].title
         cell.moneyAmount.text = "\(BalanceBrain.sharedInstance.balanceCategories[indexPath.row].currentBalance.description)$"
@@ -73,14 +87,18 @@ import UIKit
         var PLeft = CGFloat(BalanceBrain.sharedInstance.balanceCategories[indexPath.row].percentLeft/100)
         let Cy = cell.backView.center.y
         let Cx = cell.backView.center.x
+        let Width = cell.backView.bounds.width
 
-        
+      
+        cell.Constraint?.constant = PLeft * Width - Width
+        println(ViewCellController.Constraint?.constant)
+        println(PLeft * Width - Width )
      
-        newFrame.transform = CGAffineTransformMakeScale(PLeft , 1)
-       newFrame.center = CGPointMake(Cx - ((1 - PLeft) * cell.backView.bounds.width / 2 ), Cy)
+      //  newFrame.transform = CGAffineTransformMakeScale(PLeft , 1)
+       //newFrame.center = CGPointMake(Cx - ((1 - PLeft) * cell.backView.bounds.width / 2 ), Cy)
 
-        println(newFrame.center)
-        println(PLeft * cell.backView.bounds.width)
+        //println(newFrame.center)
+        //println(PLeft * cell.backView.bounds.width)
        
         return cell
     }

@@ -57,7 +57,7 @@
                                                             <color key="backgroundColor" red="0.57394249184107893" green="0.85239109848484851" blue="0.5452182947784473" alpha="1" colorSpace="calibratedRGB"/>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFx-Qm-SVE">
-                                                            <rect key="frame" x="16" y="11" width="118" height="42"/>
+                                                            <rect key="frame" x="16" y="11" width="117.5" height="42"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -88,6 +88,7 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="Constraint" destination="ph8-1E-qFN" id="FTy-Qs-M81"/>
                                                     <outlet property="backView" destination="tfB-2U-tee" id="QKL-Wb-RIw"/>
                                                     <outlet property="frontView" destination="zxL-Kg-5Ss" id="mlE-kB-zMv"/>
                                                     <outlet property="moneyAmount" destination="QkQ-Nf-RZG" id="mm9-Rh-Exg"/>
