@@ -27,11 +27,11 @@
                                             <constraint firstAttribute="height" constant="496" id="5YH-W5-eix"/>
                                         </constraints>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="h9c-dl-c1Z">
-                                            <rect key="frame" x="0.0" y="86" width="320" height="199"/>
+                                            <rect key="frame" x="0.0" y="86" width="320" height="64"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-tk-sqx">
-                                                    <rect key="frame" x="8" y="8" width="79" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-tk-sqx">
+                                                    <rect key="frame" x="121" y="17" width="79" height="30"/>
                                                     <state key="normal" title="Add money">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -41,6 +41,12 @@
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="CcW-tk-sqx" firstAttribute="top" secondItem="h9c-dl-c1Z" secondAttribute="top" constant="17" id="4t9-t3-Bz9"/>
+                                                <constraint firstAttribute="trailing" secondItem="CcW-tk-sqx" secondAttribute="trailing" constant="120" id="9yZ-Oq-auL"/>
+                                                <constraint firstItem="CcW-tk-sqx" firstAttribute="leading" secondItem="h9c-dl-c1Z" secondAttribute="leading" constant="121" id="n5D-0j-mWb"/>
+                                                <constraint firstAttribute="bottom" secondItem="CcW-tk-sqx" secondAttribute="bottom" constant="17" id="uuu-oL-FlC"/>
+                                            </constraints>
                                         </view>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="balanceCategory" id="Lkn-fQ-kUq" customClass="CategoryViewCell" customModule="Wise_Money" customModuleProvider="target">
@@ -122,6 +128,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8wp-nW-aAA"/>
                     <connections>
+                        <outlet property="ViewAddButton" destination="h9c-dl-c1Z" id="9Xu-FM-hWv"/>
                         <outlet property="tableView" destination="Ft3-FC-3M9" id="4yW-Du-6cf"/>
                         <outlet property="view" destination="eci-Kf-usi" id="9sL-N2-gCZ"/>
                     </connections>

@@ -21,6 +21,7 @@ class popUpAddViewController: UIView {
         BalanceBrain.sharedInstance.addMoney(operation.moneyValue.doubleValue)
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         dismissPresentingPopup()
+        NSNotificationCenter.defaultCenter().postNotificationName("NeedReload", object: nil)
         
     }
     

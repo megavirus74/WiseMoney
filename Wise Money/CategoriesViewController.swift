@@ -19,6 +19,8 @@ import UIKit
         super.viewDidLoad()
         self.reload()
         
+        
+        
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "reload",
@@ -46,16 +48,11 @@ import UIKit
         tableView.reloadData()
     }
     
-//    func Slider()
-//    {
-//        println("HOHOHOHO")
-//        let t = BalanceBrain.sharedInstance.balanceCategories.count
-//        
-//        for i in 1...t {
-//            Constraint.constant =  -(CGFloat(1 - BalanceBrain.sharedInstance.balanceCategories[i].percentLeft) * backView.bounds.width)
-//        }
-//    }
 
+
+    
+    @IBOutlet weak var ViewAddButton: UIView!
+    
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,7 +72,7 @@ import UIKit
         tableView.reloadData()
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("balanceCategory", forIndexPath: indexPath) as! CategoryViewCell
         cell.title.text = BalanceBrain.sharedInstance.balanceCategories[indexPath.row].title
         cell.moneyAmount.text = "\(BalanceBrain.sharedInstance.balanceCategories[indexPath.row].currentBalance.description)$"
