@@ -12,9 +12,7 @@ class popUpAddViewController: UIView {
     
     @IBOutlet weak var input: UITextField!
     
-    
     @IBAction func AddMoney(sender: AnyObject) {
-        
         var operation = BalanceOperation.MR_createEntity()
         operation.date = NSDate()
         operation.moneyValue = (self.input.text as NSString).doubleValue
@@ -22,17 +20,5 @@ class popUpAddViewController: UIView {
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         dismissPresentingPopup()
         NSNotificationCenter.defaultCenter().postNotificationName("NeedReload", object: nil)
-        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

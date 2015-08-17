@@ -10,10 +10,8 @@ import UIKit
 
 class PopUpViewController: UIView {
 
-    @IBOutlet var popUpView: UIView!
     @IBOutlet weak var input: UITextField!
     var categoryID = Int()
-    
     
     @IBAction func subtract() {
         var operation = BalanceOperation.MR_createEntity()
@@ -23,27 +21,5 @@ class PopUpViewController: UIView {
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         dismissPresentingPopup()
         NSNotificationCenter.defaultCenter().postNotificationName("NeedReload", object: nil)
-
-
-        
-       
-        
-       
-        
     }
-
-    
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

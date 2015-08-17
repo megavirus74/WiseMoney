@@ -13,15 +13,17 @@ class CategoryViewCell: UITableViewCell {
     
     var MainController: CategoriesViewController!
     
+    
+    @IBOutlet weak var moneyAmount: UILabel!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var constraint: NSLayoutConstraint!
+    
     @IBOutlet weak var frontView: UIView! {
         didSet {
             frontView.layer.cornerRadius = 10;
             frontView.layer.masksToBounds = true;
         }
-        
     }
-    
-    
     
     @IBOutlet weak var backView: UIView! {
         didSet {
@@ -30,31 +32,18 @@ class CategoryViewCell: UITableViewCell {
         }
     }
     
+    var balanceCategory: BalanceCategory!
     
-    @IBOutlet weak var moneyAmount: UILabel!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var Constraint: NSLayoutConstraint!
-    
-    func changeToPressedState() {
-        
+    func calculateWidth() {
+        let newFrame = self.frontView
+        var pLeft = CGFloat(balanceCategory.percentLeft/100)
+        let width = self.backView.bounds.width
+        self.constraint?.constant = pLeft * width - width
     }
-   // required init(coder aDecoder: NSCoder) {
-        //super.init(coder: aDecoder)
-        
     
-        
-   // }
-    
-    
-    func Slider()
-    {
-        println("HOHOHOHO")
-        let t = BalanceBrain.sharedInstance.balanceCategories.count
-        
-        for i in 1...t {
-        Constraint.constant =  -(CGFloat(1 - BalanceBrain.sharedInstance.balanceCategories[i].percentLeft) * backView.bounds.width)
+    func layoutWithAnimation(){
+        UIView.animateWithDuration(0.5) {
+            self.frontView.layoutIfNeeded()
         }
     }
-    
-    
 }
