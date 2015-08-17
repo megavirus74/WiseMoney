@@ -45,6 +45,7 @@ import UIKit
         let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
         
         popup.showWithLayout(layout)
+        popUpView.input.becomeFirstResponder()
     }
     
     func reloadCellsWithAnimation(){
@@ -63,6 +64,7 @@ import UIKit
         popUpView.categoryID = indexPath.row
         let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
         popup.showWithLayout(layout)
+        popUpView.input.becomeFirstResponder()
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -7,13 +7,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="popUpAddViewController" customModule="Wise_Money" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="314" height="340"/>
+            <rect key="frame" x="0.0" y="0.0" width="314" height="162"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Money Value" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntg-B6-RVP">
                     <rect key="frame" x="109" y="41" width="97" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5C-vv-v12">
                     <rect key="frame" x="134" y="86" width="30" height="30"/>
@@ -30,6 +30,7 @@
             <connections>
                 <outlet property="input" destination="ntg-B6-RVP" id="SKT-b5-zeK"/>
             </connections>
+            <point key="canvasLocation" x="163" y="132"/>
         </view>
     </objects>
 </document>
