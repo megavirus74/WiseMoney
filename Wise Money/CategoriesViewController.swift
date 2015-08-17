@@ -42,7 +42,7 @@ import UIKit
     @IBAction func addMoney(sender: UIButton) {
         let layout = KLCPopupLayoutMake(KLCPopupHorizontalLayout.Center, KLCPopupVerticalLayout.Center)
         var popUpView = NSBundle.mainBundle().loadNibNamed("popUpAdd", owner: self, options: nil).last as! popUpAddViewController
-        let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
+        let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.FadeIn, dismissType: KLCPopupDismissType.FadeOut, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
         
         popup.showWithLayout(layout)
         popUpView.input.becomeFirstResponder()
@@ -62,7 +62,7 @@ import UIKit
         let layout = KLCPopupLayoutMake(KLCPopupHorizontalLayout.Center, KLCPopupVerticalLayout.Center)
         var popUpView = NSBundle.mainBundle().loadNibNamed("PopUpView", owner: self, options: nil).last as! PopUpViewController
         popUpView.categoryID = indexPath.row
-        let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.BounceInFromBottom, dismissType: KLCPopupDismissType.BounceOutToTop, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
+        let popup = (KLCPopup) (contentView: popUpView, showType: KLCPopupShowType.FadeIn, dismissType: KLCPopupDismissType.FadeOut, maskType: KLCPopupMaskType.Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
         popup.showWithLayout(layout)
         popUpView.input.becomeFirstResponder()
     }

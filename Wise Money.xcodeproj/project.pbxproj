@@ -26,6 +26,7 @@
 		D8A579FE1B4447B300D8C9EE /* BalanceCategoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */; };
 		EE533C051B7F239500F5A05A /* popUpAdd.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE533C041B7F239500F5A05A /* popUpAdd.xib */; };
 		EE533C0A1B7F23DD00F5A05A /* popUpAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */; };
+		EE8EF55D1B824B230084CFD1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EF55C1B824B230084CFD1 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceCategoryExtension.swift; sourceTree = "<group>"; };
 		EE533C041B7F239500F5A05A /* popUpAdd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popUpAdd.xib; sourceTree = "<group>"; };
 		EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpAddViewController.swift; sourceTree = "<group>"; };
+		EE8EF55C1B824B230084CFD1 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				D80CB9861B7B95C8002C5EE1 /* Libraries */,
 				D8848E501B3B24A800E3A3AC /* moneyData.xcdatamodeld */,
 				D8848E1F1B3AFCE800E3A3AC /* Main.storyboard */,
+				EE8EF55C1B824B230084CFD1 /* HistoryViewController.swift */,
 				D8848E4C1B3B20FD00E3A3AC /* Classes */,
 				D8848E4D1B3B210400E3A3AC /* ViewControllers */,
 				D8848E191B3AFCE800E3A3AC /* Supporting Files */,
@@ -343,6 +346,7 @@
 				D8848E1C1B3AFCE800E3A3AC /* AppDelegate.swift in Sources */,
 				D8848E4B1B3B19E200E3A3AC /* CategoriesViewController.swift in Sources */,
 				D80CB98C1B7BA337002C5EE1 /* KLCPopup.m in Sources */,
+				EE8EF55D1B824B230084CFD1 /* HistoryViewController.swift in Sources */,
 				D8A579FA1B44479900D8C9EE /* BalanceCategory.swift in Sources */,
 				D8848E411B3B00DF00E3A3AC /* SWRevealViewController.m in Sources */,
 				D8A579FE1B4447B300D8C9EE /* BalanceCategoryExtension.swift in Sources */,

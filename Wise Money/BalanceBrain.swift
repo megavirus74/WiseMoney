@@ -10,10 +10,20 @@ import UIKit
 
 class BalanceBrain {
     static let sharedInstance = BalanceBrain()
-    
     var balanceCategories = [BalanceCategory]()
     
-    var totalBalance = Double()
+    var totalBalance: Double {
+        get {
+            var sum = Double()
+            var balanceOperations = BalanceOperation.MR_findAll() as! [BalanceOperation]
+            for operation in balanceOperations {
+                if ((operation.balanceCategory) == nil) {
+                    sum+=operation.moneyValue.doubleValue
+                }
+            }
+            return sum
+        }
+    }
     
     var currentBalance: Double {
         get {
@@ -25,6 +35,8 @@ class BalanceBrain {
         }
     }
     
+    
+    
     init () {
         let savedBalanceCategories = BalanceCategory.MR_findAll() as? [BalanceCategory]
         if (savedBalanceCategories?.count>0) {
@@ -35,23 +47,17 @@ class BalanceBrain {
             addCategory("Reserve", categoryDescription: "Your reservation", categoryPercent: 0.1)
             addCategory("Savings", categoryDescription: "ALALA", categoryPercent: 0.05)
             addCategory("Gifts", categoryDescription: "Your reservation", categoryPercent: 0.3)
-        }
-        addMoney(100)
-        if let total = NSUserDefaults.standardUserDefaults().objectForKey("totalBalance") as? Double
-        {
-            totalBalance = NSUserDefaults.standardUserDefaults().objectForKey("totalBalance") as! Double
-        }
-        else {
-            totalBalance = 0
-            addMoney(0)
+            addMoney(100)
         }
     }
     
-    func addMoney (money: Double) {
-        totalBalance+=money;
-        NSUserDefaults.standardUserDefaults().setDouble(totalBalance, forKey: "totalBalance")
-        NSUserDefaults.standardUserDefaults().synchronize()
+    func addMoney(value: Double) {
+        var operation = BalanceOperation.MR_createEntity()
+        operation.date = NSDate()
+        operation.moneyValue = value
+        operation.balanceCategory = nil
     }
+    
     
     func addCategory (title: String, categoryDescription: String, categoryPercent: NSNumber) {
         var category = BalanceCategory.MR_createEntity()

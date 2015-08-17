@@ -11,10 +11,10 @@ import CoreData
 
 @objc(BalanceOperation)
 class BalanceOperation: NSManagedObject {
-
+    
     @NSManaged var comment: String
     @NSManaged var date: NSDate
     @NSManaged var moneyValue: NSNumber
-    @NSManaged var balanceCategory: BalanceCategory
+    @NSManaged var balanceCategory: BalanceCategory?
 
 }
