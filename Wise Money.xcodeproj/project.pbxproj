@@ -27,6 +27,7 @@
 		EE533C051B7F239500F5A05A /* popUpAdd.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE533C041B7F239500F5A05A /* popUpAdd.xib */; };
 		EE533C0A1B7F23DD00F5A05A /* popUpAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */; };
 		EE8EF55D1B824B230084CFD1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EF55C1B824B230084CFD1 /* HistoryViewController.swift */; };
+		EE8EF55F1B849C4E0084CFD1 /* SectionsInHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EF55E1B849C4E0084CFD1 /* SectionsInHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		EE533C041B7F239500F5A05A /* popUpAdd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popUpAdd.xib; sourceTree = "<group>"; };
 		EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpAddViewController.swift; sourceTree = "<group>"; };
 		EE8EF55C1B824B230084CFD1 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		EE8EF55E1B849C4E0084CFD1 /* SectionsInHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsInHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,6 @@
 				D80CB9861B7B95C8002C5EE1 /* Libraries */,
 				D8848E501B3B24A800E3A3AC /* moneyData.xcdatamodeld */,
 				D8848E1F1B3AFCE800E3A3AC /* Main.storyboard */,
-				EE8EF55C1B824B230084CFD1 /* HistoryViewController.swift */,
 				D8848E4C1B3B20FD00E3A3AC /* Classes */,
 				D8848E4D1B3B210400E3A3AC /* ViewControllers */,
 				D8848E191B3AFCE800E3A3AC /* Supporting Files */,
@@ -171,6 +172,7 @@
 				D8A579F91B44479900D8C9EE /* BalanceCategory.swift */,
 				D8A579FD1B4447B300D8C9EE /* BalanceCategoryExtension.swift */,
 				D8848E4E1B3B230700E3A3AC /* CategoryViewCell.swift */,
+				EE8EF55E1B849C4E0084CFD1 /* SectionsInHistory.swift */,
 				D8848E461B3B07AB00E3A3AC /* BalanceBrain.swift */,
 			);
 			name = Classes;
@@ -184,6 +186,7 @@
 				EE533C091B7F23DD00F5A05A /* popUpAddViewController.swift */,
 				D8848E591B3B2E9400E3A3AC /* PopUpViewController.swift */,
 				D8848E4A1B3B19E200E3A3AC /* CategoriesViewController.swift */,
+				EE8EF55C1B824B230084CFD1 /* HistoryViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				D8848E4B1B3B19E200E3A3AC /* CategoriesViewController.swift in Sources */,
 				D80CB98C1B7BA337002C5EE1 /* KLCPopup.m in Sources */,
 				EE8EF55D1B824B230084CFD1 /* HistoryViewController.swift in Sources */,
+				EE8EF55F1B849C4E0084CFD1 /* SectionsInHistory.swift in Sources */,
 				D8A579FA1B44479900D8C9EE /* BalanceCategory.swift in Sources */,
 				D8848E411B3B00DF00E3A3AC /* SWRevealViewController.m in Sources */,
 				D8A579FE1B4447B300D8C9EE /* BalanceCategoryExtension.swift in Sources */,

@@ -19,13 +19,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Wise Money/BalanceBrain.swift"
-            timestampString = "461520175.362813"
+            filePath = "Wise Money/HistoryViewController.swift"
+            timestampString = "461663660.143558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "BalanceBrain"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "HistoryViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>

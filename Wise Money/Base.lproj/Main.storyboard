@@ -27,9 +27,18 @@
                                             <constraint firstAttribute="height" constant="496" id="5YH-W5-eix"/>
                                         </constraints>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="h9c-dl-c1Z">
-                                            <rect key="frame" x="0.0" y="86" width="320" height="64"/>
+                                            <rect key="frame" x="0.0" y="86" width="320" height="93"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL6-OJ-bia">
+                                                    <rect key="frame" x="121" y="55" width="79" height="30"/>
+                                                    <state key="normal" title="History">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="Ube-M5-GHy" kind="push" id="Z60-gi-kJt"/>
+                                                    </connections>
+                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-tk-sqx">
                                                     <rect key="frame" x="121" y="17" width="79" height="30"/>
                                                     <state key="normal" title="Add money">
@@ -43,9 +52,12 @@
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="CcW-tk-sqx" firstAttribute="top" secondItem="h9c-dl-c1Z" secondAttribute="top" constant="17" id="4t9-t3-Bz9"/>
+                                                <constraint firstAttribute="bottom" secondItem="eL6-OJ-bia" secondAttribute="bottom" constant="8" id="9gW-v8-jqh"/>
                                                 <constraint firstAttribute="trailing" secondItem="CcW-tk-sqx" secondAttribute="trailing" constant="120" id="9yZ-Oq-auL"/>
+                                                <constraint firstItem="eL6-OJ-bia" firstAttribute="top" secondItem="CcW-tk-sqx" secondAttribute="bottom" constant="8" id="MtT-Nx-Kqy"/>
+                                                <constraint firstAttribute="trailing" secondItem="eL6-OJ-bia" secondAttribute="trailing" constant="120" id="d7x-2y-enz"/>
+                                                <constraint firstItem="eL6-OJ-bia" firstAttribute="leading" secondItem="h9c-dl-c1Z" secondAttribute="leading" constant="121" id="joA-tL-oHh"/>
                                                 <constraint firstItem="CcW-tk-sqx" firstAttribute="leading" secondItem="h9c-dl-c1Z" secondAttribute="leading" constant="121" id="n5D-0j-mWb"/>
-                                                <constraint firstAttribute="bottom" secondItem="CcW-tk-sqx" secondAttribute="bottom" constant="17" id="uuu-oL-FlC"/>
                                             </constraints>
                                         </view>
                                         <prototypes>
@@ -129,7 +141,7 @@
                     <navigationItem key="navigationItem" id="8wp-nW-aAA"/>
                     <connections>
                         <outlet property="ViewAddButton" destination="h9c-dl-c1Z" id="9Xu-FM-hWv"/>
-                        <outlet property="tableView" destination="Ft3-FC-3M9" id="4yW-Du-6cf"/>
+                        <outlet property="tableView" destination="Ft3-FC-3M9" id="zUy-1E-9gQ"/>
                         <outlet property="view" destination="eci-Kf-usi" id="9sL-N2-gCZ"/>
                     </connections>
                 </viewController>
@@ -177,7 +189,7 @@
                                             <constraint firstAttribute="height" constant="496" id="xyy-4b-XDT"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="balanceCategory" id="gw3-dU-iKK" customClass="CategoryViewCell" customModule="Wise_Money" customModuleProvider="target">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="balanceOperation" id="gw3-dU-iKK" customClass="CategoryViewCell" customModule="Wise_Money" customModuleProvider="target">
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gw3-dU-iKK" id="afe-Uu-bfq">
                                                     <autoresizingMask key="autoresizingMask"/>
@@ -256,13 +268,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="t8t-a5-D79"/>
                     <connections>
-                        <outlet property="tableView" destination="v51-e9-TJU" id="ory-h6-AM9"/>
+                        <outlet property="tableView" destination="v51-e9-TJU" id="Pfs-os-8de"/>
                         <outlet property="view" destination="ezX-bb-JOP" id="R0a-6l-PQ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WpU-ex-2ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936" y="-700"/>
+            <point key="canvasLocation" x="1998" y="-700"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -11,6 +11,7 @@ import UIKit
 class BalanceBrain {
     static let sharedInstance = BalanceBrain()
     var balanceCategories = [BalanceCategory]()
+
     
     var totalBalance: Double {
         get {

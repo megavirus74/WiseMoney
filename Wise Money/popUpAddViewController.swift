@@ -12,9 +12,11 @@ class popUpAddViewController: UIView {
     
     @IBOutlet weak var input: UITextField!
     
+    @IBOutlet weak var comment: UITextField!
     @IBAction func AddMoney(sender: AnyObject) {
         var operation = BalanceOperation.MR_createEntity()
         operation.date = NSDate()
+        operation.comment = comment.text
         operation.moneyValue = (self.input.text as NSString).doubleValue
         operation.balanceCategory = nil
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()

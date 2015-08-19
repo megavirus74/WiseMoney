@@ -8,28 +8,63 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+   
+    @IBOutlet weak var tableView: UITableView!
 
+    
+    
+    var colorRed = UIColor(red: 215/255, green: 35/255, blue: 35/255, alpha: 1)
+    var colorGreen = UIColor(red: 41/255, green: 132/255, blue: 26/255, alpha: 1)
+    var balanceOperations = BalanceOperation.MR_findAll() as! [BalanceOperation]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return balanceOperations.count
     }
-    */
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var cell = tableView.dequeueReusableCellWithIdentifier("balanceOperation", forIndexPath: indexPath) as! CategoryViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
 
+    }
+    
+     func numberOfSectionsInTableView(tableView: UITableView) -> Int{
+        return 2
+    }
+    
+     func tableView(tableView: UITableView,
+        titleForHeaderInSection section: Int)
+        -> String {
+         
+            return "ASDASD"
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("balanceOperation", forIndexPath: indexPath) as! CategoryViewCell
+       // tableView.sectionHeaderHeight = balanceOperations[indexPath.row].date
+
+        
+        cell.moneyAmount.text = "\(balanceOperations[indexPath.row].moneyValue.stringValue)$"
+        if (!(balanceOperations[indexPath.row].balanceCategory == nil)) {
+            cell.title.text = balanceOperations[indexPath.row].balanceCategory?.title
+            cell.frontView.backgroundColor = colorRed
+        } else {
+            cell.frontView.backgroundColor = colorGreen
+            cell.title.text = ""
+        }
+
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        return cell
+    }
 }
