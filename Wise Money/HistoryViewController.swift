@@ -93,27 +93,23 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
-    func sort(){
-        var operation = balanceOperations.last!
-        addSection(operation)
-        
+    func sort() {
         var formatter: NSDateFormatter = NSDateFormatter()
         formatter.dateFormat = "dd-MM-yyyy"
-        let stringDate: String = formatter.stringFromDate(operation.date)
         
-        for var i = balanceOperations.count-1 ; i >= 0 ; --i {
-            if !(formatter.stringFromDate(operation.date) == formatter.stringFromDate(balanceOperations[i].date)){
-                addSection(balanceOperations[i])
-                sections.last!.operations.append(balanceOperations[i])
-                operation = balanceOperations[i]
-            } else {
-              // println(operation.moneyValue)
-               sections.last!.operations.append(balanceOperations[i])
+        var previousOperation: BalanceOperation? = nil
+        
+        
+        for operation in balanceOperations {
+            if (previousOperation == nil || formatter.stringFromDate(operation.date) != formatter.stringFromDate(previousOperation!.date)) {
+                addSection(operation)
+                sections.last!.operations.insert(operation, atIndex: 0)
             }
-            
-            
+            else {
+                sections.last!.operations.insert(operation, atIndex: 0)
+            }
+            previousOperation = operation
         }
-        
         println(sections.count)
         println(sections.first?.operations.count)
         println(balanceOperations.count)
