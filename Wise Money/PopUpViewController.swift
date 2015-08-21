@@ -12,7 +12,17 @@ class PopUpViewController: UIView {
 
     @IBOutlet weak var comment: UITextField!
     @IBOutlet weak var input: UITextField!
+    @IBOutlet weak var doneButton: UIButton!
+    
     var categoryID = Int()
+    
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 8
+        self.layer.masksToBounds = true
+        
+        doneButton.layer.cornerRadius = 4
+        doneButton.layer.masksToBounds = true
+    }
     
     @IBAction func subtract() {
         var operation = BalanceOperation.MR_createEntity()

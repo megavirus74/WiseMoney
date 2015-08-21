@@ -20,7 +20,6 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     var balanceOperations = BalanceOperation.MR_findAll() as! [BalanceOperation]
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -34,19 +33,14 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var cell = tableView.dequeueReusableCellWithIdentifier("balanceOperation", forIndexPath: indexPath) as! CategoryViewCell
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
-
+        
     }
     
      func numberOfSectionsInTableView(tableView: UITableView) -> Int{
         return 2
     }
     
-     func tableView(tableView: UITableView,
-        titleForHeaderInSection section: Int)
-        -> String {
-         
+     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String {
             return "ASDASD"
     }
     

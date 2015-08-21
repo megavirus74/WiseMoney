@@ -10,9 +10,18 @@ import UIKit
 
 class popUpAddViewController: UIView {
     
+    @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var input: UITextField!
-    
     @IBOutlet weak var comment: UITextField!
+    
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 8
+        self.layer.masksToBounds = true
+        
+        doneButton.layer.cornerRadius = 4
+        doneButton.layer.masksToBounds = true
+    }
+    
     @IBAction func AddMoney(sender: AnyObject) {
         var operation = BalanceOperation.MR_createEntity()
         operation.date = NSDate()

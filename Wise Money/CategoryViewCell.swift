@@ -20,15 +20,15 @@ class CategoryViewCell: UITableViewCell {
     
     @IBOutlet weak var frontView: UIView! {
         didSet {
-            frontView.layer.cornerRadius = 10;
-            frontView.layer.masksToBounds = true;
+            frontView.layer.cornerRadius = 8
+            frontView.layer.masksToBounds = true
         }
     }
     
     @IBOutlet weak var backView: UIView! {
         didSet {
-            backView.layer.cornerRadius = 10;
-            backView.layer.masksToBounds = true;
+            backView.layer.cornerRadius = 8
+            backView.layer.masksToBounds = true
         }
     }
     
