@@ -63,9 +63,9 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
        // tableView.sectionHeaderHeight = balanceOperations[indexPath.row].date
 
         
-        cell.moneyAmount.text = "\(balanceOperations[indexPath.row].moneyValue.stringValue)$"
-        if (!(balanceOperations[indexPath.row].balanceCategory == nil)) {
-            cell.title.text = balanceOperations[indexPath.row].balanceCategory?.title
+        cell.moneyAmount.text = "\(sections[indexPath.section].operations[indexPath.row].moneyValue.stringValue)$"
+        if (!(sections[indexPath.section].operations[indexPath.row].balanceCategory == nil)) {
+            cell.title.text = sections[indexPath.section].operations[indexPath.row].balanceCategory?.title
             cell.frontView.backgroundColor = colorRed
         } else {
             cell.frontView.backgroundColor = colorGreen
