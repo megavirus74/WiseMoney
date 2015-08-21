@@ -21,6 +21,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     var sections = [Section]()
 
     
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,15 +42,20 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        var cell = tableView.dequeueReusableCellWithIdentifier("balanceOperation", forIndexPath: indexPath) as! CategoryViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+
     }
     
      func numberOfSectionsInTableView(tableView: UITableView) -> Int{
         return sections.count
     }
     
-     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String {
-            return "ASDASD"
+     func tableView(tableView: UITableView,
+        titleForHeaderInSection section: Int)
+        -> String? {
+         
+            return sections[section].title
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
