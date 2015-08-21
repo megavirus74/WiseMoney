@@ -8,20 +8,13 @@
 
 import Foundation
 
-class Section{
+class Section : NSObject{
     
-    let collation = UILocalizedIndexedCollation.currentCollation()
-        as! UILocalizedIndexedCollation
+    var title = String()
+    var date = NSDate()
+    var operations = [BalanceOperation]()
     
-    var sections: [Section] = []
-    var balanceOperations = BalanceOperation.MR_findAll() as! [BalanceOperation]
-    var today = NSDate()
+
     
-    func SectionsCount(){
-        
-        if !(balanceOperations[1].date == today){
-        //sections.count = sections.count + 1
-        }
-    }
     
 }
