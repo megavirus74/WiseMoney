@@ -8,13 +8,8 @@
 
 import Foundation
 
-class Section : NSObject{
-    
+class Section : NSObject {
     var title = String()
     var date = NSDate()
     var operations = [BalanceOperation]()
-    
-
-    
-    
 }

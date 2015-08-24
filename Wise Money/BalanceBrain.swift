@@ -48,7 +48,6 @@ class BalanceBrain {
             addCategory("Reserve", categoryDescription: "Your reservation", categoryPercent: 0.1)
             addCategory("Savings", categoryDescription: "ALALA", categoryPercent: 0.05)
             addCategory("Gifts", categoryDescription: "Your reservation", categoryPercent: 0.3)
-            addMoney(100)
         }
     }
     
